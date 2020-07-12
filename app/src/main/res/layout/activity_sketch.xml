@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.google.sample.cloudvision.Main_SketchActivity">
+
+    <com.google.sample.cloudvision.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_weight="8"
+        android:background="#fff"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_weight="0.5"
+        android:background="#FFFFFF"
+        android:backgroundTint="#2BA7E7E7"
+        android:gravity="center_horizontal"
+        android:weightSum="3"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/blackColorBtn"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.125"
+            android:background="@drawable/blackcircle"
+            android:contentDescription="Black Color Button"
+            android:scaleType="center"
+            tools:ignore="HardcodedText,NestedWeights" />
+
+        <ImageButton
+            android:id="@+id/redColorBtn"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.125"
+            android:background="@drawable/redcircle"
+            android:contentDescription="Red Color Button"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/yellowColorBtn"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.125"
+            android:background="@drawable/yellowcircle"
+            android:contentDescription="Yellow Color Button"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/greenColorBtn"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.125"
+            android:background="@drawable/green"
+            android:contentDescription="Green Color Button"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/blueColorBtn"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.125"
+            android:background="@drawable/bluecircle"
+            android:contentDescription="Blue Color Button"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:backgroundTint="#2BA7E7E7"
+        android:gravity="center"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="#A39CFAEF"
+            android:text="Reset"
+            tools:ignore="ButtonStyle,HardcodedText,NestedWeights" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="#A39CFAEF"
+            android:text="Save"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>
